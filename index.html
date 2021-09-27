@@ -8,16 +8,42 @@
   <title>Responsive</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/stylecss.css">
 </head>
 
 <body>
-  <h2 class="question--title">Q7 サイズ変更</h2>
+  <h2 class="question--title">Q1 サイズ変更</h2>
+  <div class="size-box"></div>
   <h2 class="question--title">Q2 色変更</h2>
+  <div class="box-base color-box"></div>
   <h2 class="question--title">Q3 margin値の変更</h2>
-  <h2 class="question--title">Q4 floatの解除</h2>
+  <div class="q3area">
+    <div class="box-base left-b"></div>
+    <div class="box-base right-b"></div>
+  </div>
+    <h2 class="question--title">Q4 floatの解除</h2>
+  <div class="clearfix q4area">
+    <div class="box-base red-b box-float"></div>
+    <div class="box-base blue-b box-float"></div>
+  </div>
   <h2 class="question--title">Q5 flexboxの入れ替え(逆順)</h2>
+  <div class="q5area">
+    <div class="box-base red-b q5q6-box">A</div>
+    <div class="box-base blue-b q5q6-box">B</div>
+    <div class="box-base orange-b q5q6-box">C</div>
+  </div>
   <h2 class="question--title">Q6 flexboxの入れ替え(指定)</h2>
+  <div class="q6q7area">
+    <div class="box-base melon-b q5q6-box melon-order">A</div>
+    <div class="box-base yellow-b q5q6-box yellow-order">B</div>
+    <div class="box-base pink-b q5q6-box">C</div>
+  </div>
   <h2 class="question--title">Q7 要素の表示・非表示</h2>
+  <div class="q6q7area">
+    <div class="box-base red-b red-display"></div>
+    <div class="box-base blue-b blue-display"></div>
+    <div class="box-base melon-b"></div>
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  width: 1100px;
+}
+
+/*pc=メディアクエリ適応前
+sp=メディアクエリ適応後
+共通のもの以外をブレイクポイント指定で記入*/
+
+/*サイズ変更*/
+.size-box {
+  background: #ff0000;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.box-base {
+  width: 300px;
+  height: 300px;
+}
+
+/*色変更*/
+.color-box {
+  background: #ff0000;
+  margin: 0 auto;
+}
+
+/*Q3*/
+.q3area {
+  text-align: center;
+}
+
+.left-b {
+  display: inline-block;
+  background: #0008ff;
+  margin-right: 150px;
+}
+
+.right-b {
+  display: inline-block;
+  background: #22ff00;
+}
+
+/*Q3以降の共通box*/
+.blue-b {
+  background: #0008ff;
+}
+
+.red-b {
+  background: #ff0000;
+}
+
+.orange-b {
+  background: #ff8400;
+}
+
+.melon-b {
+  background: #00ff51;
+}
+
+.yellow-b {
+  background: #d4ff00;
+}
+
+.pink-b {
+  background: #ff00e1;
+}
+
+/*floatの解除*/
+.q4area {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.box-float {
+  float: left;
+}
+
+/*flexboxの入れ替え(逆順)*/
+.q5area {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*アルファベット中央*/
+.q5q6-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*flexboxの入れ替え(指定)*/
+.q6q7area {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*要素の表示・非表示*/
+.blue-display {
+  display: none;
+}
+
+/*960未満で適応、未満は960を含まないので最大値959で指定
+タブレット端末の設定*/
+
+@media screen and (max-width: 959px) {
+    /*サイズ変更*/
+    .size-box {
+      width: 200px;
+      height: 200px;
+    }
+
+    /*色変更*/
+    .color-box {
+      background: #007bff;
+    }
+
+    /*margin変更*/
+    .left-b {
+      margin-right: 50px;
+    }
+
+    /*floatの解除*/
+    .box-float {
+      float: none;
+    }
+
+    /*flexboxの入れ替え(逆順)*/
+    .q5area {
+      flex-direction: row-reverse
+    }
+
+    /*flexboxの入れ替え(指定)*/
+    .melon-order {
+      order: 1;
+    }
+
+    .yellow-order {
+      order: 2;
+    }
+
+    /*要素の表示・非表示*/
+    .red-display {
+      display: none;
+    }
+
+    .blue-display {
+      display: inline-block;
+    }
+  }
