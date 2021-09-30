@@ -33,9 +33,10 @@ sp=メディアクエリ適応後
   margin: 0 auto;
 }
 
-/*Q3*/
+/*Q3、謎の隙間修正*/
 .q3area {
   text-align: center;
+  font-size: 0;
 }
 
 .left-b {
@@ -90,6 +91,7 @@ sp=メディアクエリ適応後
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 /*アルファベット中央*/
@@ -107,7 +109,23 @@ sp=メディアクエリ適応後
   align-items: center;
 }
 
+.melon-order {
+  order: 0;
+}
+
+.yellow-order {
+  order: 1;
+}
+
+.pink-order {
+  order: 2;
+}
+
 /*要素の表示・非表示*/
+.red-display {
+  display: block;
+}
+
 .blue-display {
   display: none;
 }
@@ -143,6 +161,9 @@ sp=メディアクエリ適応後
     }
 
     /*flexboxの入れ替え(指定)*/
+    .pink-order {
+      order: 0;
+    }
     .melon-order {
       order: 1;
     }
@@ -157,6 +178,6 @@ sp=メディアクエリ適応後
     }
 
     .blue-display {
-      display: inline-block;
+      display: block;
     }
   }
